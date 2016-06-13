@@ -1,4 +1,4 @@
-package dao;
+package com.jpa.dao;
 
 import com.jpa.entities.User;
 

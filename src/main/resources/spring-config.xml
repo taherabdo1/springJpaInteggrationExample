@@ -25,7 +25,7 @@
         http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
         
 	<!-- <jpa:repositories base-package="com.coderevisited.spring"/> -->
-	<context:component-scan base-package="dao" />
+	<context:component-scan base-package="com.jpa.dao" />
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />

@@ -3,9 +3,8 @@ package com.jpa.jpaDemo;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.jpa.dao.UserDaoInt;
 import com.jpa.entities.User;
-
-import dao.UserDaoInt;
 
 /**
  * Hello world!
