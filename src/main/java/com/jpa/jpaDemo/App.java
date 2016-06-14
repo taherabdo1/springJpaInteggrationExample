@@ -5,6 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.jpa.dao.UserDaoInt;
 import com.jpa.entities.User;
+import com.jpa.services.UserServiceInt;
 
 /**
  * Hello world!
@@ -18,9 +19,9 @@ public class App
     	ApplicationContext ctx = new ClassPathXmlApplicationContext(
 				"spring-config.xml");
 
-		UserDaoInt userDao = (UserDaoInt) ctx.getBean("userDao");
+		UserServiceInt userService = (UserServiceInt) ctx.getBean("userService");
 
-		User user = userDao.getById(2);
+		User user = userService.getUser(2);
 		System.out.println("User name: " + user.getName());
 
 
